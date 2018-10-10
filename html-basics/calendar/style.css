@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+}
+
+table {
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(94, 94, 94);
+    border-radius: 2rem;
+    border-spacing: 1rem 1rem;
+}
+
+.table {
+    width: 16rem;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(94, 94, 94);
+    border-radius: 2rem;
+    padding: 2%;
+}
+
+.heading button{
+    font-weight: 700;
+}
+
+button {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+}
