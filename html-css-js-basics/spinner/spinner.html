@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="spinner.css">
+    <title>Spinner</title>
+</head>
+<body>
+<div class="container">
+    <button onclick="loadContent()">Cargar contenido</button>
+    <div class="main">
+        <h1>Parrafo</h1>
+        <p style="display: none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, at delectus ducimus earum eligendi expedita
+            illum inventore libero magnam nam nemo officia quisquam quo quod repudiandae, rerum vitae? Aliquid assumenda
+            cumque delectus doloribus esse et fugiat, ipsam ipsum laudantium maxime minima mollitia natus neque nobis
+            obcaecati quaerat quam quidem repellat reprehenderit sequi sunt totam vel. Architecto excepturi illo laborum
+            numquam qui. Consequuntur dicta dolorum ducimus facilis id, inventore iste laborum molestias nisi numquam
+            possimus quidem quis quo quos ratione saepe, sapiente sunt temporibus voluptatem voluptatibus. A animi cum
+            distinctio facere ipsum laudantium maiores, placeat provident, quam ratione repellendus, sapiente tempora!</p>
+    </div>
+</div>
+
+<script>
+    const div = document.querySelector('.main');
+    const p = document.querySelector('.main p');
+    p.style.display = 'none';
+
+    function loadContent() {
+        if (p.style.display !== 'none') {
+            p.style.display = 'none';
+        }
+        div.classList.add('spinner');
+        // Imitar carga de un servidor
+        setTimeout(function () {
+            div.classList.remove('spinner');
+            p.style.display = 'block';
+        }, 4000);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* estilos del spinner */
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    border-radius: 50%;
+    border: 0.1rem solid lightgray;
+    border-top-color: #00ff39;
+    animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* estilos del container */
+.container {
+    margin-left: 10%;
+    width: 75vw;
+}
+
+/* estilos del boton */
+button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    background-color: #00ff39;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.5rem #7e7e7e;
+    outline: none;
+}
+
+button:active {
+    box-shadow: none;
+}
