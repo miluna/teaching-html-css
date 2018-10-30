@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .caja {
+        width: 10rem;
+        height: 10rem;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease;
+    }
+
+    .red {
+        background: red;
+    }
+</style>
+
+<body>
+    <div class="caja" id="boton-1">Botón</div>
+</body>
+<script>
+    const btn = document.querySelector("#boton-1");
+
+    function addClass() {
+        const clases = btn.classList;
+        const classToAdd = "red";
+        console.log(btn, clases);
+        if (clases.contains(classToAdd)) {
+            btn.classList.remove(classToAdd);
+        } else {
+            btn.classList.add(classToAdd);
+        }
+    }
+
+    btn.addEventListener("click", addClass);
+</script>
+
+</html>
