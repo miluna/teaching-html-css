@@ -1,0 +1,29 @@
+:root {
+    --color-blanco-roto: rgb(230, 230, 230);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.barra-superior {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-blanco-roto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.barra-superior-contenido {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-weight: 600;
+}
