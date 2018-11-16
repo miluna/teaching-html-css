@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="todoApp.css">
+</head>
+<body>
+<div class="header">
+    <h1>App de Tareas</h1>
+</div>
+<div class="container">
+    <div class="card main-card">
+        <div class="form-group">
+            <h3>Añadir tareas</h3>
+            <div class="input-div">
+                <input type="text"
+                       class="form-control todo-text"
+                       id="todo-text"
+                       placeholder="Nombre de la tarea">
+                <button id="add-btn"
+                        type="button"
+                        class="btn btn-primary add-btn hide"
+                >Añadir</button>
+            </div>
+            <div id="error"
+                 class="alert alert-danger cartel-error hide"
+                 role="alert">
+                ¡¡No se puden añadir textos vacios!!
+            </div>
+        </div>
+        <h3>Tareas</h3>
+        <ul id="listado"></ul>
+    </div>
+
+</div>
+</body>
+<script src="todoApp.js"></script>
+</html>
