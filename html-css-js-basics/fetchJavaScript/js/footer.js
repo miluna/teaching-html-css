@@ -1,6 +1,8 @@
 const footer = 
-    `<footer>
-        <p>Copyright 2018</p>
+    `<footer style="position: fixed; left:0; right:0; bottom:0;">
+        <nav class="navbar navbar-light bg-light">
+        <p style="margin:auto">Copyright 2018</p>
+        </nav>
     </footer>`;
 
-document.body.innerHTML += footer;
+export default footer;
