@@ -12,6 +12,7 @@ En este curso aprendemos los fundamentos de HTML, CSS y JavaScript para crear ap
   * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/html-instagram">Instagram</a>
 * Fundamentos de programación con JavaScript y manipulación del DOM usando JavaScript
   * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/javascript-helloWorld">Hello World</a>
+  * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/javascript-dataStructures">Estructuras de datos</a>
   * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/javascript-addClass">Añadir clases</a>
   * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/javascript-todoApp">Todo App</a>
   * <a href="https://github.com/miluna/teaching-html-css-js/tree/master/javascript-bookmarkApp">BookMark App</a>  
